@@ -1,51 +1,54 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700&display=swap');
-:root{
-  --sidebar-flex:1.5;
-  --condiv-flex:6;
-  --fontsize-p:1.2rem;
-  --fontsize-nav:1.2rem;
-  --typing-font:1.8rem;
+
+:root {
+  --sidebar-flex: 1.5;
+  --condiv-flex: 6;
+  --fontsize-p: 1.2rem;
+  --fontsize-nav: 1.2rem;
+  --typing-font: 1.8rem;
 }
-*
-{
-  margin:0;
+
+* {
+  margin: 0;
   padding: 0;
 }
-body{
+
+body {
   font-family: 'Raleway';
-  background: linear-gradient(#ff758c,#764ba2);
+  background: linear-gradient(#ff758c, #764ba2);
 }
-.App
-{
+
+.App {
   display: flex;
   width: 100vw;
   min-height: 100vh;
 }
-.glass{
+
+.glass {
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0px 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
 }
-nav
-{
+
+nav {
   width: 20%;
-	height: 90%;
-	position: absolute;
-	top: 4%;
-	left: 4%; 
-	padding: 0;
+  height: 90%;
+  position: absolute;
+  top: 4%;
+  left: 4%;
+  padding: 0;
   line-height: 1;
   text-align: center;
 }
-.condiv
-{
+
+.condiv {
   width: 60%;
-	height: 90%;
-	position: absolute;
-	top: 4%;
-	left: 28%; 
+  height: 90%;
+  position: absolute;
+  top: 4%;
+  left: 28%;
   line-height: 1;
   padding-left: 10px;
   padding-right: 10px;
@@ -56,93 +59,100 @@ nav
   border-radius: 10px;
 }
 
-.home
-{
+.home {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  
+
 }
-.profilepic
-{
+
+.profilepic {
   border-radius: 50%;
   width: 160px;
   margin: 30px;
   opacity: 90%;
 }
-.typingeffect
-{
+
+.typingeffect {
   font-size: var(--typing-font);
   margin-bottom: 30px;
   color: #ffffffbf;
 }
 
-nav ul{
+nav ul {
   position: absolute;
   bottom: 2%;
   left: 5%;
   width: 90%;
-  font-size:var(--fontsize-nav) ;
+  font-size: var(--fontsize-nav);
   text-align: center;
   list-style-type: none;
   text-decoration: none;
 }
-nav ul li
-{
-  margin:15px;
+
+nav ul li {
+  margin: 15px;
   padding: 11px;
   border-radius: 10px;
   color: white;
 }
-nav ul li:hover{
+
+nav ul li:hover {
   background-color: #ffffff80;
 }
 
-a
-{
+a {
   text-decoration: none;
 }
 
-.subtopic
-{
-  margin:10px 10px 10px 15px;
+.subtopic {
+  margin: 10px 10px 10px 15px;
   font-size: 1.6rem;
 }
-p{
+
+p {
   font-size: var(--fontsize-p);
   color: #ffffffbf;
   margin: 10px;
 }
-h1{
+
+h1 {
   margin: 10px;
   font-size: 3.3rem;
 }
-h2{
+
+h2 {
   font-size: 2rem;
 }
-.abouthead{
+
+.abouthead {
   margin: 15px 10px;
   font-size: 2.3rem;
 }
-h3{
+
+h3 {
   font-size: 1.4rem;
   margin: 37px 0 0 90px;
 }
-h4{
+
+h4 {
   font-size: 1.2rem;
   margin: 24px 0 0 90px;
 }
-.p1{
+
+.p1 {
   margin-left: 90px;
   font-size: 1rem;
 }
-.sk_head{
+
+.sk_head {
   position: absolute;
   top: 50%;
   left: 45%;
 }
-.sk{
+
+.sk {
   position: absolute;
   top: 65%;
   left: 58%;
@@ -150,33 +160,40 @@ h4{
   width: 90px;
   height: 15px;
   font-weight: bolder;
-  color: rgba(245, 108, 109,1);
+  color: rgba(245, 108, 109, 1);
   text-align: center;
   padding: 10px;
 }
-.sk:hover{
+
+.sk:hover {
   background-color: #ffffff80;
 }
-.s2{
+
+.s2 {
   left: 75%;
 }
-.s3{
+
+.s3 {
   top: 75%;
   left: 58%;
 }
-.s4{
+
+.s4 {
   top: 75%;
   left: 75%;
 }
-.s5{
+
+.s5 {
   top: 85%;
   left: 58%;
 }
-.s6{
+
+.s6 {
   top: 85%;
   left: 75%;
 }
-mark{
+
+mark {
   color: inherit;
   padding: 0;
   background: 0 0;
@@ -184,352 +201,417 @@ mark{
   background-position-y: 0px;
   background-repeat: repeat;
   background-size: auto;
-  background-image: linear-gradient(120deg,rgba(245, 108, 109,1) 0,rgba(245, 108, 109,1) 100%);
+  background-image: linear-gradient(120deg, rgba(245, 108, 109, 1) 0, rgba(245, 108, 109, 1) 100%);
   background-repeat: no-repeat;
   background-size: 100% .28em;
   background-position: 0 70%;
   position: relative;
 }
-.hr_line{
+
+.hr_line {
   width: 60px;
   height: 10px;
 }
-.hr_inner{
+
+.hr_inner {
   width: 30px;
   height: 5px;
   border-radius: 5px;
   margin: 2.5px 15px;
-  background: linear-gradient(120deg,rgba(245, 108, 109,1) 0,rgba(245, 108, 109,1) 100%);
+  background: linear-gradient(120deg, rgba(245, 108, 109, 1) 0, rgba(245, 108, 109, 1) 100%);
 }
-.line2{
+
+.line2 {
   margin: 1px 25px;
   height: 5px;
 }
-.inner2{
-  background: rgba(245, 108, 109,1);
+
+.inner2 {
+  background: rgba(245, 108, 109, 1);
   width: 30px;
   height: 5px;
   border-radius: 5px;
   margin: 7px;
   margin-left: 15px;
 }
-.vr_line{
+
+.vr_line {
   width: 10px;
   height: 210px;
   position: absolute;
   top: 58%;
   left: 6.25%;
 }
-.vr_inner{
+
+.vr_inner {
   width: 10px;
   height: 15px;
   border-radius: 5px;
-  background: linear-gradient(120deg,rgba(245, 108, 109,1) 0,rgba(245, 108, 109,1) 100%);
+  background: linear-gradient(120deg, rgba(245, 108, 109, 1) 0, rgba(245, 108, 109, 1) 100%);
 }
-.inn1{
+
+.inn1 {
   margin-top: 45px;
 }
-.inn2{
+
+.inn2 {
   margin-top: 80px;
 }
-.social
-{
+
+.social {
   width: 50%;
-	height: 14%;
-	position: absolute;
-	bottom: 4%;
-	right: 25%; 
-	display: flex;
-	justify-content: center;
+  height: 14%;
+  position: absolute;
+  bottom: 4%;
+  right: 25%;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
-.btnsame{
-	height: 50px;
-	width: 50px;
-	margin: 15px 20px;
-	border-radius: 5px;
-	cursor: pointer;
-	align-items: center;
-	justify-content: center;
-	transition: all 400ms;
-	position: relative;
+
+.btnsame {
+  height: 50px;
+  width: 50px;
+  margin: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition: all 400ms;
+  position: relative;
 }
-.btnsame i{
+
+.btnsame i {
   font-size: 28px;
   transition: all 400ms;
   position: absolute;
   top: 20%;
   left: 25%;
 }
-.btn1 i{
+
+.btn1 i {
   color: #4078c0;
 }
-.btn2 i{
-  color:#00acee;
+
+.btn2 i {
+  color: #00acee;
 }
-.btn3 i{
-  color:#0077b5;
+
+.btn3 i {
+  color: #0077b5;
 }
-.btn4 i{
+
+.btn4 i {
   color: #bc2a8d;
 }
+
 .btnsame:hover {
   background-color: #ffffff80;
 }
-.active
-{
+
+.active {
   background-color: #ffffff80;
   font-weight: bolder;
 }
-.port_out{
+
+.port_out {
   position: absolute;
   width: 38%;
   height: 30%;
 }
-.port_out:hover{
+
+.port_out:hover {
   background-color: #ffffff80;
 }
-.port1{
+
+.port1 {
   top: 18%;
   left: 10%;
 }
-.port2{
+
+.port2 {
   top: 18%;
   left: 53%;
 }
-.port3{
+
+.port3 {
   top: 58%;
   left: 10%;
 }
-.port4{
+
+.port4 {
   top: 58%;
   left: 53%;
 }
 
-.po1{
+.po1 {
   width: 96%;
   height: 93%;
   margin: 2% 2%;
   border-radius: 10px;
 }
-.line3{
+
+.line3 {
   position: absolute;
   top: 70%;
   left: 45%;
 }
-.inner3{
+
+.inner3 {
   margin: 3px 15px;
-  background: rgba(245, 108, 109,1);
+  background: rgba(245, 108, 109, 1);
   width: 30px;
   height: 5px;
   border-radius: 5px;
 }
-.con_out{
+
+.con_out {
   position: absolute;
   width: 88%;
   top: 13%;
   left: 6%;
 }
-.con_out:hover{
+
+.con_out:hover {
   background-color: #ffffff80;
 }
-.co1{
+
+.co1 {
   width: 99%;
   height: 99%;
   border-radius: 10px;
   padding: 5px;
 }
 
-.back1{
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	top: 4%;
-	right: 2%;
-	font-size: 22px;
+.back1 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 4%;
+  right: 2%;
+  font-size: 22px;
   cursor: pointer;
 }
-.back1:hover{
+
+.back1:hover {
   background-color: #ffffff80;
 }
-.i1{
-   position: absolute;
-   top: 13px;
-   left: 15px;
+
+.i1 {
+  position: absolute;
+  top: 13px;
+  left: 15px;
 }
-.i2{
+
+.i2 {
   color: #ffffffbf;
   padding-right: 10px;
 }
-.i3{
-  color: rgba(245, 108, 109,1);
+
+.i3 {
+  color: rgba(245, 108, 109, 1);
 }
-.back2{
+
+.back2 {
   top: 55%;
   left: 4%;
   z-index: 1;
   background-color: #ffffffbf;
   border-radius: 10px;
 }
-.back3{
+
+.back3 {
   width: 210px;
-	height: 25px;
+  height: 25px;
   padding: 12px 0;
-	position: absolute;
-	top: 54%;
+  position: absolute;
+  top: 54%;
   left: 22%;
   color: black;
   font-size: 22px;
   text-align: center;
   cursor: pointer;
 }
-.back3:hover{
-  background-color: rgba(245, 108, 109,.5);
+
+.back3:hover {
+  background-color: rgba(245, 108, 109, .5);
 }
-.back4{
+
+.back4 {
   left: 56%;
 }
 
 @media all and (max-width: 450px) {
   :root {
-    --fontsize-nav:1.2rem;
-    --sidebar-flex:0;
-    --typing-font:1.4rem;
+    --fontsize-nav: 1.2rem;
+    --sidebar-flex: 0;
+    --typing-font: 1.4rem;
   }
-  body{
+
+  body {
     height: 1400px;
   }
-  .App
-  {
+
+  .App {
     flex-direction: column;
   }
-  .sidebar
-  {
+
+  .sidebar {
     padding: 30px;
   }
-  .back1{
+
+  .back1 {
     right: 5%;
   }
-  nav
-  {
+
+  nav {
     width: 90%;
     top: 15%;
     left: 5%;
   }
-  nav ul li
-  {
+
+  nav ul li {
     margin: 10px;
   }
-  .neu2{
+
+  .neu2 {
     top: 5%;
     left: 19%;
   }
-  h2{
+
+  h2 {
     font-size: 2.2rem;
   }
-  p{
+
+  p {
     font-size: 1.4rem;
   }
-  .condiv
-  {
+
+  .condiv {
     top: 110%;
     left: 5%;
     width: 84.5%;
     height: 100%;
     margin-bottom: 50px;
   }
-  h1{
+
+  h1 {
     text-align: center;
     font-size: 2.8rem;
   }
-  .p10{
+
+  .p10 {
     display: none;
   }
-  .back2{
+
+  .back2 {
     top: 27%;
   }
-  .vr_line{
+
+  .vr_line {
     top: 30.5%;
     left: 10.5%;
   }
-  h3{
+
+  h3 {
     margin-top: 25px;
   }
-  .sk_head{
+
+  .sk_head {
     left: 0;
     top: 65%;
     margin-left: 30px;
-  }.sk{
+  }
+
+  .sk {
     top: 74%;
     left: 10%;
   }
-  .s2{
+
+  .s2 {
     left: 50%;
   }
-  .s3{
+
+  .s3 {
     top: 82%;
   }
-  .s4{
+
+  .s4 {
     top: 82%;
     left: 50%;
   }
-  .s5{
+
+  .s5 {
     top: 90%;
   }
-  .s6{
+
+  .s6 {
     top: 90%;
     left: 50%;
   }
-  .subtopic{
-  margin: 10px!important;
+
+  .subtopic {
+    margin: 10px !important;
   }
-  .con_out{
+
+  .con_out {
     width: 88%;
     height: 20%;
   }
-  .con_in{
+
+  .con_in {
     width: 94%;
     height: 88%;
   }
-  .back3{
+
+  .back3 {
     top: 44%;
     left: 19%;
   }
-  .back4{
+
+  .back4 {
     top: 54%;
     left: 19%;
   }
-  .line2{
+
+  .line2 {
     margin: 1px 120px;
   }
-  .inner2{
+
+  .inner2 {
     margin: 15px;
   }
-  .port_out{
+
+  .port_out {
     width: 80%;
     height: 26%;
   }
-  .port1{
+
+  .port1 {
     top: 12%;
   }
-  .port2{
+
+  .port2 {
     left: 10%;
     top: 42%;
   }
-  .port3{
+
+  .port3 {
     display: none;
   }
-  .port4{
+
+  .port4 {
     top: 72%;
     left: 10%;
   }
-  .social
-  {
+
+  .social {
     width: 90%;
     bottom: 5%;
     right: 5%;
   }
-  .btnsame{
+
+  .btnsame {
     margin: 15px 10px;
   }
 }

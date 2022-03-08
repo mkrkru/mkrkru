@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import './App.css';
 import {
@@ -9,39 +9,29 @@ import Navbar from './components/Navbar';
 import Home from './contents/Home';
 import About from './contents/About';
 import Portfolio from './contents/Portfolio';
-import Contact from './contents/Contact';
+import Social from './components/Social';
 
 const GlobalStyle = createGlobalStyle`
-  body{
-  background: linear-gradient(${props => props.theme.mode === 'dark' ? '#868f96, #596164' : '(#ff758c,#764ba2'});
+  body {
+    background: linear-gradient(#3a6186, #89253e);
   }
 
-`
+`;
+
 
 function App() {
-  const [theme, setTheme] = useState({ mode: 'light' });
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={{ mode: 'dark' }}>
       <>
         <GlobalStyle />
         <Router>
           <div className="App">
             <Navbar />
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/portfolio">
-              <Portfolio />
-            </Route>
-            <Route path="/contact">
-              <Contact />
-            </Route>
-            <div class="back1 glass" onClick={e => setTheme(
-              theme.mode === 'dark' ? { mode: 'light' } : { mode: 'dark' }
-            )}><i class={theme.mode === 'dark' ? "fa fa-sun i1" : "fa fa-moon i1"}></i></div>
+            <Route exact path="/"><Home /></Route>
+            {/* <Route path="/about"><About /></Route>
+            <div class="back1 glass" onClick={() => setTheme(
+              theme.mode === 'dark' ? 'light' : 'dark'
+            )}><i class={theme.mode === 'dark' ? "fa fa-sun i1" : "fa fa-moon i1"}></i></div> */}
           </div>
         </Router>
       </>
