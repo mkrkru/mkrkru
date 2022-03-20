@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-- 🔭 Average TypeScript and life complication enjoyer
+- 🔭 Average TypeScript, Porsche and life complication enjoyer
 - 🖥 Wants to collaborate in creating digital heaven
 - 💬 Ask him about everything: mkrkru#9956
 - 😄 He/him
